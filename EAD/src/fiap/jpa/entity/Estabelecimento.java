@@ -43,6 +43,9 @@ public class Estabelecimento {
 		this.nome = nome;
 	}
 
+	public Estabelecimento(String string) {
+	}
+
 	public void setId(int id) {
 		this.id = id;
 	}

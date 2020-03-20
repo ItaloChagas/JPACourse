@@ -35,6 +35,14 @@ public class Contrato {
 	@JoinColumn(name= "id_estabelecimento")
 	private Estabelecimento estabelecimento;
 	
+	public Estabelecimento getEstabelecimento() {
+		return estabelecimento;
+	}
+
+	public void setEstabelecimento(Estabelecimento estabelecimento) {
+		this.estabelecimento = estabelecimento;
+	}
+
 	public int getId() {
 		return id;
 	}

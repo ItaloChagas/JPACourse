@@ -1,0 +1,17 @@
+package fiap.jpa.teste;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class AvaliacaoCreate {
+
+	public static void main(String[] args) {
+		
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("JPA");
+		EntityManager em = fabrica.createEntityManager();
+		
+		
+	}
+
+}

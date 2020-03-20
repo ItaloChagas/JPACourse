@@ -1,0 +1,14 @@
+package fiap.jpa.entity.composedPk;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+
+@Embeddable
+public class AvaliacaoId {
+
+	@Column(name ="id_estabelecimento")
+	private int idEstablecimento;
+	@Column(name ="id_cliente")
+	private int idCliente;
+	
+}

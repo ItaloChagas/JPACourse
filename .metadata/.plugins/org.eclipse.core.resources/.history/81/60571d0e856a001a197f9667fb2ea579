@@ -1,0 +1,30 @@
+package fiap.jpa.teste;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import fiap.jpa.entity.Cliente;
+import fiap.jpa.entity.Estabelecimento;
+
+public class AvaliacaoCreate {
+
+	public static void main(String[] args) {
+		
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("JPA");
+		EntityManager em = fabrica.createEntityManager();
+		
+		Estabelecimento estabelecimento = new Estabelecimento("McDonalds");
+		
+		try {
+			
+			Cliente cliente = em.find(Cliente.class, 1);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+	}
+
+}

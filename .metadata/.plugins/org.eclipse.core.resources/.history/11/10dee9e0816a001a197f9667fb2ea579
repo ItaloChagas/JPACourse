@@ -1,0 +1,11 @@
+package fiap.jpa.entity.composedPk;
+
+import javax.persistence.Embeddable;
+
+@Embeddable
+public class AvaliacaoId {
+
+	private Estabelecimento cliente;
+	private Cliente cliente
+	
+}
