@@ -1,0 +1,9 @@
+package fiap.jpa.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+@Table(name ="tb_estabelecimento")
+public class Estabelecimento {
+
+}

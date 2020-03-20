@@ -1,0 +1,19 @@
+package fiap.jpa.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name ="tb_estabelecimento")
+public class Estabelecimento {
+
+	@Id
+	@Column(name="id_contrato")
+	private int id; 
+	
+	private String nome;
+	
+	
+}

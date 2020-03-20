@@ -1,0 +1,18 @@
+package fiap.jpa.entity;
+
+import java.util.Calendar;
+
+import javax.persistence.Entity;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name ="tb_contrato")
+public class Contrato {
+
+	@Id
+	@SequenceGenerator(sequenceName = "seq_contrato", allocationSize = 1, name = "contrato")
+	private int id;
+	private float aluguel; 
+	private Calendar dataVencimento; 
+}

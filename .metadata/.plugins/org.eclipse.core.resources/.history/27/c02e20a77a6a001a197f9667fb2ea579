@@ -1,0 +1,22 @@
+package fiap.jpa.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name ="tb_estabelecimento")
+public class Estabelecimento {
+
+	@Id
+	@Column(name="id_contrato")
+	@GeneratedValue(generator = "seq_estabelecimento", strategy = GenerationType.SEQUENCE)
+	private int id; 
+	
+	private String nome;
+	
+	
+}
