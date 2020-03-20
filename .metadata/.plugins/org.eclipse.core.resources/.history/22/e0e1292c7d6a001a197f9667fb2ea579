@@ -30,7 +30,7 @@ public class Estabelecimento {
 	
 
 	@ManyToOne
-	@JoinColumn(name = "id_tipo_estabelecimento")
+	@JoinColumn(name = "tb_tipo_estabelecimento")
 	private TipoEstabelecimento tipo;
 	
 	public int getId() {
