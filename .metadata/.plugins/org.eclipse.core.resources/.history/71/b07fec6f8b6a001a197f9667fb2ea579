@@ -16,12 +16,10 @@ public class AvaliacaoCreate {
 		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("JPA");
 		EntityManager em = fabrica.createEntityManager();
 		
-		
+		Estabelecimento estabelecimento = new Estabelecimento("McDonalds");
+		Cliente cliente = new Cliente("Italo");
 				
 		try {
-			
-			Estabelecimento estabelecimento = new Estabelecimento("McDonalds");
-			Cliente cliente = new Cliente("Italo");
 			
 			em.persist(estabelecimento);
 			em.persist(cliente);

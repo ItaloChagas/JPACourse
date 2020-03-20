@@ -9,7 +9,7 @@ import fiap.jpa.entity.Cliente;
 import fiap.jpa.entity.Estabelecimento;
 import fiap.jpa.entity.composedPk.AvaliacaoId;
 
-public class AvaliacaoCreate {
+public class EstabelecimentoCreate {
 
 	public static void main(String[] args) {
 		
@@ -17,23 +17,15 @@ public class AvaliacaoCreate {
 		EntityManager em = fabrica.createEntityManager();
 		
 		
+		
 				
 		try {
-			
-			Estabelecimento estabelecimento = new Estabelecimento("McDonalds");
-			Cliente cliente = new Cliente("Italo");
+		
+			Estabelecimento estabelecimento = new Estabelecimento();
+			estabelecimento.setNome("mcDonlad");
 			
 			em.persist(estabelecimento);
-			em.persist(cliente);
-			
-			AvaliacaoId idNovo = new AvaliacaoId();
-			idNovo.setIdCliente(cliente.getId());
-			idNovo.setIdEstablecimento(estabelecimento.getId());
-			
-			Avaliacao avaliacao = new Avaliacao();
-			avaliacao.setId(idNovo);
-			
-			em.persist(avaliacao);
+		
 			
 			em.getTransaction().begin();
 			em.getTransaction().commit();

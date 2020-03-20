@@ -9,31 +9,20 @@ import fiap.jpa.entity.Cliente;
 import fiap.jpa.entity.Estabelecimento;
 import fiap.jpa.entity.composedPk.AvaliacaoId;
 
-public class AvaliacaoCreate {
+public class EstabelecimentoCreate {
 
 	public static void main(String[] args) {
 		
 		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("JPA");
 		EntityManager em = fabrica.createEntityManager();
 		
+		Estabelecimento estabelecimento = new Estabelecimento("McDonalds");
 		
 				
 		try {
 			
-			Estabelecimento estabelecimento = new Estabelecimento("McDonalds");
-			Cliente cliente = new Cliente("Italo");
-			
 			em.persist(estabelecimento);
-			em.persist(cliente);
-			
-			AvaliacaoId idNovo = new AvaliacaoId();
-			idNovo.setIdCliente(cliente.getId());
-			idNovo.setIdEstablecimento(estabelecimento.getId());
-			
-			Avaliacao avaliacao = new Avaliacao();
-			avaliacao.setId(idNovo);
-			
-			em.persist(avaliacao);
+		
 			
 			em.getTransaction().begin();
 			em.getTransaction().commit();

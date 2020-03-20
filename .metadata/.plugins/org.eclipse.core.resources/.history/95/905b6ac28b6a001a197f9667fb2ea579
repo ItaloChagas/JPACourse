@@ -40,19 +40,13 @@ public class Estabelecimento {
 		this.nome = nome;
 	}
 		
-
-	public Estabelecimento(String nome) {
-		super();
-		this.nome = nome;
+	public Estabelecimento(String string) {
 	}
-
-
+	
 	public Estabelecimento() {
-		super();
 	}
-
-
-
+	
+	
 	public int getId() {
 		return id;
 	}

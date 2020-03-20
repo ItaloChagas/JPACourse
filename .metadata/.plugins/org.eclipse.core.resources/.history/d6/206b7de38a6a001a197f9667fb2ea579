@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public class Estabelecimento {
 
 	@Id
-	@Column(name="id_estabelecimento")
+	@Column(name="id_establecimento")
 	@SequenceGenerator(name = "estabelecimento", sequenceName = "seq_estabelecimento")
 	@GeneratedValue(generator = "estabelecimento", strategy = GenerationType.SEQUENCE)
 	private int id; 
@@ -32,31 +32,19 @@ public class Estabelecimento {
 	@ManyToOne
 	@JoinColumn(name = "id_tipo_estabelecimento")
 	private TipoEstabelecimento tipo;
-
 	
+	public int getId() {
+		return id;
+	}
+
 	public Estabelecimento(int id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
 	}
-		
 
-	public Estabelecimento(String nome) {
-		super();
-		this.nome = nome;
+	public Estabelecimento(String string) {
 	}
-
-
-	public Estabelecimento() {
-		super();
-	}
-
-
-
-	public int getId() {
-		return id;
-	}
-
 
 	public void setId(int id) {
 		this.id = id;
