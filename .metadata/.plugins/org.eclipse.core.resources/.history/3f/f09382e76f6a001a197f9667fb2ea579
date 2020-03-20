@@ -1,0 +1,9 @@
+package fiap.jpa.entity;
+
+@Table(tb_cliente)
+public class Cliente {
+
+	
+	
+	
+}

@@ -1,0 +1,11 @@
+package fiap.jpa.entity;
+
+import javax.persistence.Table;
+
+@Table("tb_cliente")
+public class Cliente {
+
+	
+	
+	
+}

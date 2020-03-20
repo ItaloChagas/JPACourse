@@ -1,0 +1,13 @@
+package fiap.jpa.teste;
+
+import javax.persistence.EntityManagerFactory;
+
+public class Cliente {
+
+	public static void main(String[] args) {
+		EntityManagerFactory fabrica = new EntityManagerFactory();  
+		
+		
+	}
+
+}
